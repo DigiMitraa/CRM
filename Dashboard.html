@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Digital Mitraa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Digital Mitraa Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <ul>
+                <li><button onclick="showSection('legalServices')">Legal Services</button></li>
+                <li><button onclick="showSection('digitalServices')">Digital Services</button></li>
+                <li><button onclick="showSection('loanServices')">Loan Services</button></li>
+                <li><button onclick="showSection('insuranceServices')">Insurance Services</button></li>
+            </ul>
+        </aside>
+
+        <section id="dashboard" class="main-content">
+            <div class="container">
+                <h2>Welcome, [Franchisee Name]</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>Clients Served</h3>
+                        <p>2000+</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>Revenue</h3>
+                        <p>₹2000/day</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button onclick="viewReports()">View Reports</button>
+                    <button onclick="manageServices()">Manage Services</button>
+                </div>
+                <div id="legalServices" class="service-section">
+                    <h3>Legal Services</h3>
+                    <p>Details about legal services offered...</p>
+                </div>
+                <div id="digitalServices" class="service-section">
+                    <h3>Digital Services</h3>
+                    <p>Details about digital services offered...</p>
+                </div>
+                <div id="loanServices" class="service-section">
+                    <h3>Loan Services</h3>
+                    <p>Details about loan services offered...</p>
+                </div>
+                <div id="insuranceServices" class="service-section">
+                    <h3>Insurance Services</h3>
+                    <p>Details about insurance services offered...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Digital Mitraa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
